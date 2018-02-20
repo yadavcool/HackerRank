@@ -1,0 +1,30 @@
+Sample Input 0
+
+4
+3 2 1 3
+Sample Output 0
+
+2
+
+   code:
+   
+#include <bits/stdc++.h>
+#include<iostream>
+using namespace std;
+int main() {
+    int ct=0;
+    int n;
+    cin >> n;
+    int arr[n];
+    for(int ar_i = 0; ar_i < n; ar_i++){
+       cin >> arr[ar_i];
+    }
+   sort(arr, arr+n);
+    for(int i=0;i<n;i++){
+        if(arr[n-1]==arr[i]){
+            ct++;
+        }
+    
+    }
+    cout<<ct;
+}
